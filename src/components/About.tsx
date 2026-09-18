@@ -24,7 +24,7 @@ export default function About() {
             />
             <figure className="relative">
               <img
-                src={IMG.storeFront2}
+                src={IMG.storeFront}
                 alt="Om Kapgate Agency — store and signage on Main Road, Sadak Arjuni"
                 loading="lazy"
                 className="aspect-[4/3] w-full rounded-xl border border-line object-cover shadow-lift"

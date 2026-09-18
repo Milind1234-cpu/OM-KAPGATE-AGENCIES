@@ -127,16 +127,15 @@ export interface GalleryItem {
 export const GALLERY_FILTERS = ["All", "Store", "Pumps", "Pipes", "Sanitary", "Bathroom Fittings", "Products"];
 
 export const GALLERY: GalleryItem[] = [
-  { id: 1, img: IMG.storeFront1, cat: "Store", caption: "Om Kapgate Agency — Main Road, Sadak Arjuni" },
-  { id: 11, img: IMG.storeFront2, cat: "Store", caption: "Om Kapgate Agency — Store & signage view" },
+  { id: 1, img: IMG.storeFront, cat: "Store", caption: "Om Kapgate Agency — Main Road, Sadak Arjuni" },
   { id: 2, img: IMG.catPipes, cat: "Pipes", caption: "PVC and CPVC pipe bundles" },
   { id: 3, img: IMG.catPumps, cat: "Pumps", caption: "Self-priming monoblock pump" },
   { id: 4, img: IMG.catSanitary, cat: "Sanitary", caption: "Sanitary ware on display" },
   { id: 5, img: IMG.catBathroom, cat: "Bathroom Fittings", caption: "Taps and faucet range" },
   { id: 6, img: IMG.galPipesWork, cat: "Pipes", caption: "Joining a CPVC line on site" },
-  { id: 8, img: IMG.catPlumbing, cat: "Products", caption: "Valves, tapes and fittings" },
-  { id: 9, img: IMG.galBathroom, cat: "Bathroom Fittings", caption: "A recently fitted bathroom" },
-  { id: 10, img: IMG.catConstruction, cat: "Products", caption: "Cement, steel and site material" },
+  { id: 7, img: IMG.catPlumbing, cat: "Products", caption: "Valves, tapes and fittings" },
+  { id: 8, img: IMG.galBathroom, cat: "Bathroom Fittings", caption: "A recently fitted bathroom" },
+  { id: 9, img: IMG.catConstruction, cat: "Products", caption: "Cement, steel and site material" },
 ];
 
 /* ── Use cases ───────────────────────────────────────────────────────── */

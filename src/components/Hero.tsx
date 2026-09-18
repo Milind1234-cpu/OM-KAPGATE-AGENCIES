@@ -58,7 +58,7 @@ export default function Hero() {
             />
             <figure className="relative">
               <img
-                src={IMG.storeFront1}
+                src={IMG.storeFront}
                 alt="Om Kapgate Agency store on Main Road, Sadak Arjuni — Falcon pumps and Ashirvad pipes dealer"
                 className="aspect-[4/3] w-full rounded-xl border border-line object-cover shadow-lift"
               />

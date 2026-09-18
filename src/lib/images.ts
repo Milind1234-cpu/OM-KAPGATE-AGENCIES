@@ -9,8 +9,7 @@ const IMG = {
   aboutStore: `${IMAGE_BASE}about-store.jpg`,
 
   // Main real-store photo slots
-  storeFront1: `${IMAGE_BASE}hero-store.jpg`,
-  storeFront2: `${IMAGE_BASE}hero-store.jpg`,
+  storeFront: `${IMAGE_BASE}hero-store.jpg`,
 
   // Category and gallery photos
   catPumps: `${IMAGE_BASE}cat-pumps.jpg`,
