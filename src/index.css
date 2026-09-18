@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Archivo", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Warm neutrals */
+  --color-paper: #faf8f3;
+  --color-cream: #f2efe6;
+  --color-line: #e5dfd0;
+  --color-ink: #22262e;
+  --color-muted: #5c6270;
+
+  /* Brand */
+  --color-navy: #10314e;
+  --color-deep: #0b2438;
+  --color-blue: #1d5c9e;
+  --color-blue-dark: #154a83;
+  --color-accent: #dd8a1b;
+  --color-accent-dark: #bd730f;
+  --color-wa: #1fa855;
+  --color-wa-dark: #178a45;
+
+  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.05), 0 1px 3px rgb(16 24 40 / 0.04);
+  --shadow-lift: 0 12px 32px -12px rgb(16 49 78 / 0.22);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+/* ---- Reveal on scroll (subtle, single use per block) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Lightbox ---- */
+@keyframes lb-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes lb-zoom {
+  from {
+    opacity: 0.35;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.lightbox {
+  animation: lb-fade 0.18s ease-out both;
+}
+.lightbox-img {
+  animation: lb-zoom 0.22s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .lightbox,
+  .lightbox-img {
+    animation: none;
+  }
+}
