@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import { HowItWorks, Reviews, TrustStrip, UseCases, WhoWeServe, WhyUs } from "./components/Sections";
+import { TrustStrip, WhyUs } from "./components/Sections";
 import Products from "./components/Products";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
@@ -36,12 +36,8 @@ export default function App() {
         <TrustStrip />
         <Products onEnquire={handleEnquire} />
         <WhyUs />
-        <WhoWeServe />
         <About />
-        <UseCases />
-        <HowItWorks />
         <Gallery />
-        <Reviews />
         <ContactBlock prefill={prefill} />
       </main>
       <Footer />

@@ -123,37 +123,3 @@ export const GALLERY: GalleryItem[] = [
   { id: 7, img: IMG.catPlumbing, cat: "Products", caption: "Valves, tapes and fittings" },
   { id: 8, img: IMG.galBathroom, cat: "Bathroom Fittings", caption: "A recently fitted bathroom" },
 ];
-
-/* ── Use cases ───────────────────────────────────────────────────────── */
-export const USE_CASES = [
-  {
-    icon: "construction",
-    title: "New Home Construction",
-    text: "Complete plumbing material for new builds — from the water tank to the last tap.",
-  },
-  {
-    icon: "bath",
-    title: "Bathroom Installation",
-    text: "Sanitary ware, taps, mixers and fittings for fitting out a new bathroom.",
-  },
-  {
-    icon: "wrench",
-    title: "Plumbing Work",
-    text: "Pipes, fittings and valves for fresh lines, re-routing and extension work.",
-  },
-  {
-    icon: "water",
-    title: "Water Supply",
-    text: "Pumps, storage tanks and connections for a dependable water supply.",
-  },
-  {
-    icon: "renovation",
-    title: "Home Renovation",
-    text: "Replacement fittings and upgrades for older bathrooms and kitchens.",
-  },
-  {
-    icon: "repair",
-    title: "Maintenance & Repairs",
-    text: "Washers, spares, tapes and quick-fix material for day-to-day repairs.",
-  },
-];
