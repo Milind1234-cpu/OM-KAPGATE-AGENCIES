@@ -2,23 +2,25 @@
 // Replace public/images/hero-store.jpg to update the main storefront photo
 // across the Hero, About, Gallery, and social preview.
 
+const IMAGE_BASE = `${import.meta.env.BASE_URL}images/`;
+
 const IMG = {
-  heroStore: "/images/hero-store.jpg",
-  aboutStore: "/images/about-store.jpg",
+  heroStore: `${IMAGE_BASE}hero-store.jpg`,
+  aboutStore: `${IMAGE_BASE}about-store.jpg`,
 
   // Main real-store photo slots
-  storeFront1: "/images/hero-store.jpg",
-  storeFront2: "/images/hero-store.jpg",
+  storeFront1: `${IMAGE_BASE}hero-store.jpg`,
+  storeFront2: `${IMAGE_BASE}hero-store.jpg`,
 
   // Category and gallery photos
-  catPumps: "/images/cat-pumps.jpg",
-  catPipes: "/images/cat-pipes.jpg",
-  catSanitary: "/images/cat-sanitary.jpg",
-  catBathroom: "/images/cat-bathroom.jpg",
-  catPlumbing: "/images/cat-plumbing.jpg",
-  catConstruction: "/images/cat-construction.jpg",
-  galBathroom: "/images/gal-bathroom.jpg",
-  galPipesWork: "/images/gal-pipes-work.jpg",
+  catPumps: `${IMAGE_BASE}cat-pumps.jpg`,
+  catPipes: `${IMAGE_BASE}cat-pipes.jpg`,
+  catSanitary: `${IMAGE_BASE}cat-sanitary.jpg`,
+  catBathroom: `${IMAGE_BASE}cat-bathroom.jpg`,
+  catPlumbing: `${IMAGE_BASE}cat-plumbing.jpg`,
+  catConstruction: `${IMAGE_BASE}cat-construction.jpg`,
+  galBathroom: `${IMAGE_BASE}gal-bathroom.jpg`,
+  galPipesWork: `${IMAGE_BASE}gal-pipes-work.jpg`,
 } as const;
 
 export default IMG;
