@@ -61,14 +61,6 @@ export const CATEGORIES: Category[] = [
     img: IMG.catPlumbing,
     alt: "Assorted plumbing valves, elbows and tapes on a counter",
   },
-  {
-    id: "construction",
-    name: "Construction Essentials",
-    tag: "Construction Essentials",
-    desc: "Water tanks, drain covers and day-one material for site work.",
-    img: IMG.catConstruction,
-    alt: "Cement bags, steel bars and bricks at a building supply yard",
-  },
 ];
 
 /* ── Sample product list (for search / filter) ─────────────────────── */
@@ -87,7 +79,6 @@ export const CATALOG_FILTERS = [
   "Sanitary",
   "Bathroom",
   "Plumbing",
-  "Construction",
 ];
 
 export const CATALOG: CatalogItem[] = [
@@ -110,10 +101,6 @@ export const CATALOG: CatalogItem[] = [
   { id: 13, name: "Ball, Gate & Check Valves", cat: "Plumbing", desc: "Flow control for overhead tanks and supply lines.", img: IMG.catPlumbing },
   { id: 14, name: "Solvent Cement & PTFE Tape", cat: "Plumbing", desc: "Jointing material for leak-free pipe connections.", img: IMG.catPlumbing },
   { id: 15, name: "Hoses, Clamps & Connectors", cat: "Plumbing", desc: "Flexible connections for pumps and fittings.", img: IMG.catPlumbing },
-
-  { id: 16, name: "Water Storage Tanks", cat: "Construction", desc: "Overhead and loft tanks in common capacities.", img: IMG.catConstruction },
-  { id: 17, name: "Drain Covers & Floor Traps", cat: "Construction", desc: "Gratings, gully traps and nahani traps for drainage.", img: IMG.catConstruction },
-  { id: 18, name: "Sealants & Waterproofing Basics", cat: "Construction", desc: "Everyday sealing and repair material for wet areas.", img: IMG.catConstruction },
 ];
 
 /* ── Gallery ─────────────────────────────────────────────────────────── */
@@ -135,7 +122,6 @@ export const GALLERY: GalleryItem[] = [
   { id: 6, img: IMG.galPipesWork, cat: "Pipes", caption: "Joining a CPVC line on site" },
   { id: 7, img: IMG.catPlumbing, cat: "Products", caption: "Valves, tapes and fittings" },
   { id: 8, img: IMG.galBathroom, cat: "Bathroom Fittings", caption: "A recently fitted bathroom" },
-  { id: 9, img: IMG.catConstruction, cat: "Products", caption: "Cement, steel and site material" },
 ];
 
 /* ── Use cases ───────────────────────────────────────────────────────── */

@@ -17,7 +17,6 @@ const IMG = {
   catSanitary: `${IMAGE_BASE}cat-sanitary.jpg`,
   catBathroom: `${IMAGE_BASE}cat-bathroom.jpg`,
   catPlumbing: `${IMAGE_BASE}cat-plumbing.jpg`,
-  catConstruction: `${IMAGE_BASE}cat-construction.jpg`,
   galBathroom: `${IMAGE_BASE}gal-bathroom.jpg`,
   galPipesWork: `${IMAGE_BASE}gal-pipes-work.jpg`,
 } as const;
